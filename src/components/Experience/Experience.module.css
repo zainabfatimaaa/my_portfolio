@@ -1,0 +1,152 @@
+.experience {
+    padding: 5rem 0;
+    /* background: #f7f4ef;  */
+  }
+  
+  .container {
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 0.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8f4a25;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #6b5c55;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #fdfbf9 0%, #e8ddd3 100%);
+    border-radius: 0.75rem;
+    padding: 1rem 2rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0) scale(1);
+    will-change: transform, box-shadow;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 35px rgba(141, 122, 108, 0.25);
+  }
+  
+  .content {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .content {
+      align-items: flex-start;
+    }
+  }
+  
+  .iconContainer {
+    flex-shrink: 0;
+  }
+  
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    background: #e6e0dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8f4a25;
+  }
+  
+  .details {
+    flex: 1;
+  }
+  
+  .cardHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .cardHeader {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  
+  .position {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b302a;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+  }
+  
+  .company {
+    font-size: 1.125rem;
+    color: #8f4a25;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  .duration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b5c55;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .duration {
+      margin-top: 0;
+    }
+  }
+  
+  .description {
+    color: #5c524a;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .achievement {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.92rem;
+    color: #5c524a;
+  }
+  
+  .chevron {
+    color: #8f4a25;
+    margin-top: 0.125rem;
+    flex-shrink: 0;
+  }
+  
+  

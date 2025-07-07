@@ -1,0 +1,141 @@
+.hero {
+    padding: 5rem 0 4rem;
+    /* background: linear-gradient(135deg, #fdfbf9 0%, #f1e6db 100%); */
+  }
+  
+  .container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .content {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  
+  .textContent {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: left;
+    font-weight: 700;
+    color: #3b302a;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .highlight {
+    color: #8f4a25;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    text-align: left;
+    color: #5c524a;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skill {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: #d6c7b7;
+    color: #2e1f18;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primaryButton, .secondaryButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+  }
+  
+  .primaryButton {
+    background: #8f4a25;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+  
+  .primaryButton:hover {
+    background: #ba6d3c;
+    color: #fff;
+  }
+  
+  .secondaryButton {
+    border: 1px solid #bfae9d;
+    color: #3b302a;
+    background: transparent;
+  }
+  
+  .secondaryButton:hover {
+    background: #f3e8db;
+    color: #8f4a25;
+  }
+  
+  .imageContainer {
+    flex-shrink: 0;
+    background: url(../../assets/pic.png);
+  }
+  
+  .imageWrapper {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e9dbcf 0%, #d6c3b5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imageCircle {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #8f4a25;
+    overflow: hidden;
+  }
+  
+  .avatar {
+    font-size: 4rem;
+  }
+  
