@@ -1,9 +1,44 @@
+:root {
+  --bg-main: #fcf7f2;          /* soft beige */
+  --text-main: #111827;
+  --accent: #8f4a25;           /* earthy brown-orange */
+  --link: #4797d9;
+  --pill-bg: #94bbed;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background: var(--bg-main);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-main);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+}
+
+p {
+  color: var(--text-main);
+}
+
 .app-background {
   min-height: 100vh;
-  background: var(--bg-gradient);
+  overflow-x: hidden;
+  width: 100%;
+  background: var(--bg-main);
   display: flex;
   flex-direction: column;
-  color: var(--text-dark);
+  color: var(--text-main);
 }
 
 .main-content {
@@ -14,20 +49,24 @@
 
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  text-align: left;
 }
 
+/* Vite default styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -54,27 +93,3 @@
 .read-the-docs {
   color: #888;
 }
-
-:root {
-  --bg-main: #fcf7f2;          /* soft beige */
-  --text-main: #111827;
-  --accent: #8f4a25;           /* earthy brown-orange */
-  --link: #4797d9;
-  --pill-bg: #94bbed;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg-main);
-  font-family: 'Segoe UI', sans-serif;
-  color: var(--text-main);
-}
-
-h1, h2, h3 {
-  color: var(--primary);
-}
-p {
-  color: var(--text-muted);
-}
-
