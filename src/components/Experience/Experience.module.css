@@ -19,6 +19,7 @@
   font-size: 2rem;
   font-weight: 700;
   color: #8f4a25;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -30,6 +31,7 @@
 .subtitle {
   font-size: 1.125rem;
   color: #6b5c55;
+  text-align: left;
 }
 
 .timeline {
@@ -45,6 +47,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
   transform: translateY(0) scale(1);
+  text-align: left;
 }
 
 .card:hover {
@@ -56,6 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -82,12 +86,14 @@
 
 .details {
   flex: 1;
+  text-align: left;
 }
 
 .cardHeader {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -103,6 +109,7 @@
   font-weight: 700;
   color: #3b302a;
   margin: 0.25rem 0 0.25rem 0;
+  text-align: left;
 }
 
 .company {
@@ -110,6 +117,7 @@
   color: #8f4a25;
   font-weight: 500;
   margin: 0;
+  text-align: left;
 }
 
 .duration {
@@ -119,6 +127,7 @@
   color: #6b5c55;
   font-size: 0.9rem;
   margin-top: 0.4rem;
+  text-align: left;
 }
 
 @media (min-width: 1024px) {
@@ -132,12 +141,14 @@
   margin-bottom: 1rem;
   line-height: 1.6;
   font-size: 0.95rem;
+  text-align: left;
 }
 
 .achievements {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .achievement {
@@ -148,6 +159,7 @@
   font-size: 0.92rem;
   color: #5c524a;
   line-height: 1.5;
+  text-align: left;
 }
 
 .chevron {

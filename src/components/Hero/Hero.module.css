@@ -1,39 +1,20 @@
 .hero {
-  padding: 3rem 0 2rem;
+  padding: 4rem 1.5rem;
   /* background: linear-gradient(135deg, #fdfbf9 0%, #f1e6db 100%); */
 }
 
 .container {
   max-width: 1152px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Mobile-first approach for better responsiveness */
-@media (min-width: 768px) {
-  .container {
-    padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    padding: 5rem 0 4rem;
-  }
+  padding: 0 1.5rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .content {
-    gap: 2.5rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -46,27 +27,18 @@
 
 .textContent {
   flex: 1;
-  width: 100%;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 700;
   color: #3b302a;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 480px) {
-  .title {
-    font-size: 2.5rem;
-  }
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -83,15 +55,13 @@
 .description {
   font-size: 1rem;
   color: #5c524a;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
 @media (min-width: 768px) {
   .description {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.7;
   }
 }
 
@@ -99,18 +69,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-  .skills {
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
   .skills {
     justify-content: flex-start;
   }
@@ -119,52 +82,37 @@
 .skill {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
   background: #d6c7b7;
   color: #2e1f18;
 }
 
-@media (min-width: 768px) {
-  .skill {
-    font-size: 0.875rem;
-  }
-}
-
 .buttons {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .buttons {
-    flex-direction: row;
-    gap: 1rem;
-    width: auto;
+    justify-content: flex-start;
   }
 }
 
-.primaryButton, .secondaryButton {
+.primaryButton,
+.secondaryButton {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  font-size: 0.95rem;
-  min-width: 140px;
-  text-align: center;
-}
-
-@media (max-width: 479px) {
-  .primaryButton, .secondaryButton {
-    width: 100%;
-  }
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .primaryButton {
@@ -174,7 +122,7 @@
 }
 
 .primaryButton:hover {
-  background: #7a3d20;
+  background: #ba6d3c;
   color: #fff;
 }
 
@@ -204,13 +152,6 @@
   justify-content: center;
 }
 
-@media (min-width: 480px) {
-  .imageWrapper {
-    width: 18rem;
-    height: 18rem;
-  }
-}
-
 @media (min-width: 768px) {
   .imageWrapper {
     width: 20rem;
@@ -230,13 +171,6 @@
   overflow: hidden;
 }
 
-@media (min-width: 480px) {
-  .imageCircle {
-    width: 16rem;
-    height: 16rem;
-  }
-}
-
 @media (min-width: 768px) {
   .imageCircle {
     width: 18rem;
@@ -245,70 +179,5 @@
 }
 
 .avatar {
-  font-size: 3rem;
-}
-
-@media (min-width: 480px) {
-  .avatar {
-    font-size: 3.5rem;
-  }
-}
-
-@media (min-size: 768px) {
-  .avatar {
-    font-size: 4rem;
-  }
-}
-
-/* Additional mobile-specific improvements */
-@media (max-width: 767px) {
-  .hero {
-    min-height: auto;
-  }
-  
-  .content {
-    padding: 0 0.5rem;
-  }
-  
-  .textContent {
-    order: 2;
-  }
-  
-  .imageContainer {
-    order: 1;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 320px) {
-  .hero {
-    padding: 2rem 0 1.5rem;
-  }
-  
-  .container {
-    padding: 0 0.5rem;
-  }
-  
-  .title {
-    font-size: 1.75rem;
-  }
-  
-  .description {
-    font-size: 0.9rem;
-  }
-  
-  .imageWrapper {
-    width: 14rem;
-    height: 14rem;
-  }
-  
-  .imageCircle {
-    width: 12rem;
-    height: 12rem;
-  }
-  
-  .avatar {
-    font-size: 2.5rem;
-  }
+  font-size: 4rem;
 }
