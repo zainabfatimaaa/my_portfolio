@@ -3,11 +3,10 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(252, 247, 242, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e8ded5;
+  border-bottom: 1px solid #e5e7eb;
   z-index: 50;
-  box-shadow: 0 1px 3px rgba(143, 74, 37, 0.05);
 }
 
 .container {
@@ -27,9 +26,10 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #8f4a25;
-  font-family: 'Segoe UI', sans-serif;
+  white-space: nowrap;
 }
 
+/* Desktop navigation */
 .navLinks {
   display: none;
   gap: 2rem;
@@ -42,16 +42,56 @@
 }
 
 .navLink {
-  color: #5c524a;
+  color: #6b5c55;
   text-decoration: none;
-  font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navLink:hover {
+  color: #3b302a;
+}
+
+/* Mobile menu support (optional hamburger toggle) */
+.menuToggle {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
   color: #8f4a25;
-  border-bottom: 2px solid #8f4a25;
+}
+
+@media (min-width: 768px) {
+  .menuToggle {
+    display: none;
+  }
+}
+
+/* Optional slide-down mobile menu */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+@media (max-width: 767px) {
+  .mobileMenu.show {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Will be toggled with JS */
+  }
+
+  .navLink {
+    padding: 0.5rem 0;
+  }
 }
