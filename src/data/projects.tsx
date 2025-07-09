@@ -7,8 +7,8 @@ export const projects: Project[] = [
     description: 'A MERN stack e-commerce platform that aggregates products from 10+ Pakistani brands with AI-powered fashion recommendations.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'LLM', 'Machine Learning'],
     duration: 'Sep 2024 – Apr 2025',
-    github: 'https://github.com/zainabfatima/shop-savy',
-    live: 'https://shop-savy.vercel.app',
+    github: 'https://github.com/zainabfatimaaa/P14-AI_Based_Shopping_Assistant',
+    live: 'https://sprojp14.vercel.app/',
     image: '/api/placeholder/600/400',
     highlights: [
       'Real-time fashion recommendations via behavioral data analysis',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description: 'Academic research chatbot using RAG architecture with LangChain, Pinecone, and Mixtral-8x7B for contextual responses.',
     technologies: ['LangChain', 'Pinecone', 'Mixtral-8x7B', 'Python', 'NLP'],
     duration: 'Sep 2024 – Dec 2024',
-    github: 'https://github.com/zainabfatima/rag-chatbot',
+    github: 'https://github.com/zainabfatimaaa/RAG',
     image: '/api/placeholder/600/400',
     highlights: [
       '~95% accuracy in contextual academic responses',
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description: 'AI-powered Android note-taking app with intelligent features like summarization, paraphrasing, and title generation.',
     technologies: ['Flutter', 'Firebase', 'GPT-3.5', 'Dart', 'Android'],
     duration: 'Jan 2024 – May 2024',
-    github: 'https://github.com/zainabfatima/intellinotes',
+    github: 'https://github.com/tanzeela-aijaz/SE-Project-Group-17',
     image: '/api/placeholder/600/400',
     highlights: [
       '~90% relevance in AI-powered summarization',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     description: 'Cloud-native restaurant management app with real-time order tracking and serverless architecture.',
     technologies: ['AWS Lambda', 'Cognito', 'CloudFront', 'DynamoDB', 'React'],
     duration: 'Jan 2025 – May 2025',
-    github: 'https://github.com/zainabfatima/restaurant-system',
+    github: 'https://github.com/zainabfatimaaa/clouddev_project',
     image: '/api/placeholder/600/400',
     highlights: [
       'Handles 500+ concurrent users with sub-200ms latency',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     description: 'Real-time trading platform with live market updates and optimized backend performance.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Express'],
     duration: 'Mar 2024 – May 2024',
-    github: 'https://github.com/zainabfatima/trading-app',
+    github: 'https://github.com/CS300-Advanced-Programming/mern-pa3-zainabfatimaaa',
     image: '/api/placeholder/600/400',
     highlights: [
       'Real-time asset listing and execution',
