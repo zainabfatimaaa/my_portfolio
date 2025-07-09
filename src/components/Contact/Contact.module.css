@@ -30,7 +30,6 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 5rem; /* Aligns with intro text */
-  padding-left: 7rem;
 }
 
 .left h2 {
